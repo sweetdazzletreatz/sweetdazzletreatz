@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Sweet Dazzle Treatz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Michelle Showers">
+<meta name="description" content="Sweetdazzletreatz Food Catering Services">
+<meta name="keywords" content="desserts, celebrations,pastries, breads, brunch box, corissant, party">
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+body {font-family:"Tahoma", Helvetica, sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family:"Georgia",Tahoma, Arial,serif,sans-serif; letter-spacing:5px}
+
+/* style the header */
+.header{
+  position: relative;
+  height: 180px;
+  background-color:white; 
+  padding:5px;
+  text-align:center; 
+  background-image: url('image/bg4.jpg');
+  display: center; 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color:#14f3f2;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(10px);
+    transform: scale(0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color:black ;
+    padding: 30px;
+}
+
+
+.header h1 {
+    margin: 10;
+    font-size: 36px;
+}
+
+.header h4{
+    margin: 0;
+    font-size: 20px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  body {margin: 0}
+}
+  
+ /* style the logo */
+.img-container { 
+  float: left;
+  width:10%;
+  padding: 1px 16px;
+  color: #a52a2a;
+  text-align: left;
+  }
+
+.clearfix::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+ 
+
+
+
+/* style the top navigation bar */
+/* The navbar */
+
+.navbar {
+  overflow: hidden;
+  background-color: #fffff;
+  color: #a52a2a;
+  font-family: inherit;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: #a52a2a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: inherit;  
+  border: none;
+  outline: none;
+  color:#a52a2a;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+ background-color: #f62fc4;
+  color:#14f3f2;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:floralwhite;
+  width: 100%;
+  left: 5;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create 5 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background-color: #fffff;
+
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #8068d6;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+    background-color: #fffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f62fc4;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar a{ float:none;
+  display:block; 
+  flex-direction: column;
+  width: 100%;
+  }
+
+  .dropdown-content {
+        min-width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+  footer {
+        position: static;
+    }
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8068d6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: fuchsia;
+    color:aqua;
+}
+</style>
+
+</head>
+
+<body>
+<header>
+  <!--Header information -->
+  <div class="header">
+  <div class="header-content">
+  <h1><b>Sweet Dazzle Treatz</b></h1>
+  <h4><b>Food Catering Services</b></h4>
+</div>
+</div>
+</header>
+<div class="clearfix">
+
+
+<!--Logo information -->
+<div class="img-container">
+  <img src="image/logo3.png" alt="Logo" style="width:74px; height: 68px; ; margin: -3px 10px 0 60px ">
+</div>
+
+<!--Navigation Bar -->
+
+<div class="navbar" style="justify-content: left; margin: 10px 20px 25px 60px;padding-left: 40px"><strong>
+ 
+<a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>&nbsp; Home</a>&nbsp;
+<a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; About</a>&nbsp;
+<a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-clone"></i>&nbsp; Services</a>&nbsp;
+
+  <div class="dropdown w3-pink">
+    <button class="dropbtn" style="font-size: 17px; color: white;"><i class="fa fa-list"></i>&nbsp;  Order&nbsp;
+      <i class="fa fa-caret-down"></i>
+          </button>
+    </strong>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+
+          <a href="specialcakes.html">Specialty Cakes</a>
+          <a href="cheesecake.html">Cheesecake</a>
+          <a href="cupcakes.html">Cupcakes</a>
+          <a href="tiramisu.html">Tiramisu</a>
+          <a href="bentocakes.html">Bento Cakes</a>
+          <a href="brunch.html">Brunch Box</a>
+          <a href="pastries.html">Pastries & Breads</a>
+         </div>
+       </div>  
+    </div>
+  </div>
+  
+  <a href="contact.html" class="w3-bar-item w3-button"><strong><i class="fa fa-phone"></i>&nbsp;  Contact</strong></a>
+  <div>
+</div>
+</div>
+
+<!--Email & whatsapp -->
+<div>
+<p style="background-color: #fffff; font-size: 12px">
+<div class="social-media" style="color: #8068d6; justify-content: right;">
+                        
+            <a href="https://www.facebook.com/sweetdazzletreatz" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sweet_dazzle_treatz" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/18683899249" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            &nbsp; 
+            &nbsp; &nbsp;
+            <div style="background-color: white; border-radius: 10px;color: brown;  text-align: center;font-size: 17px; font-family: georgia;"
+    > Click the button to see map for pick up location. &nbsp; &nbsp;<br>
+     <button onclick="window.open('map.html', '_blank')">Map</button>
+    &nbsp; &nbsp;
+    </div>
+            </div>  
+ </p>
+</div>
+
+
+<div>
+<div class="w3-container w3-animate-left  w3-center">
+  <br>
+ <h3 style="color:#f62fc4;"><strong>Pastries & Breads Order Form</strong></h3>
+</div>
+</div>
+
+
+<!-- Start Content -->
+<div id="pastries" class="w3-content">
+
+
+    <iframe
+      id="JotFormIFrame-242263605743354"
+      title="Pastries & Bread Order Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allow="geolocation; microphone; camera; fullscreen"
+      src="https://form.jotform.com/242263605743354"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242263605743354']", "https://form.jotform.com/")</script>
+    
+
+<!-- Footer -->
+<footer >
+  
+<div class="w3-container  w3-center" style="background-color: papayawhip; border-radius: 10px;">
+  <br><br>
+  <h4 style="text-align: center; color:fuchsia;"><strong>&copy;2024 Sweet Dazzle Treatz</strong></h4>
+  <h6 style="text-align: center; color:brown;">All rights reserved</h6>
+  
+        <div class="social-media" style="color: brown; justify-content: center;">
+                        
+            <a href="https://www.facebook.com/sweetdazzletreatz" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sweet_dazzle_treatz" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/18683899249" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</div>
+</body></html>

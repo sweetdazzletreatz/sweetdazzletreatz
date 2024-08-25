@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Sweet Dazzle Treatz</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Michelle Showers">
+<meta name="description" content="Sweetdazzletreatz Food Catering Services">
+<meta name="keywords" content="weddings, brunch box, cupcakes, speciality cakes,tiramisu, bento cakes, breads, pastries">
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<style>
+body {font-family:"Tahoma", Helvetica, sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family:"Georgia",Tahoma, Arial,serif,sans-serif; letter-spacing:5px}
+
+/* style the header */
+.header{
+  position: relative;
+  height: 40px;
+  background-color:white; 
+  padding:0px;
+  text-align:center; 
+  display: center; 
+  
+  color:#fffff;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(10px);
+    transform: scale(0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color:white ;
+    padding: 10px;
+}
+
+
+.header h1 {
+    margin: 10;
+    font-size: 36px;
+}
+
+.header h4{
+    margin: 0;
+    font-size: 20px;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 5px;
+  body {margin: 0}
+}
+  
+ /* style the logo */
+.img-container { 
+  float: left;
+  width:10%;
+  padding: 0px 20px 0px 40px;
+  color: #a52a2a;
+  text-align: left;
+  }
+
+.clearfix::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+
+
+/* style the top navigation bar */
+/* The navbar */
+
+.navbar {
+  overflow: hidden;
+  background-color: #fffff;
+  color: #a52a2a;
+  font-family: inherit;
+}
+
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: #a52a2a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: inherit;  
+  border: none;
+  outline: none;
+  color:#a52a2a;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+ background-color: #f62fc4;
+  color:#14f3f2;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:floralwhite;
+  width: 100%;
+  left: 5;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  margin: 0 px;
+  background-image: url('image/bg3.jpg'); 
+  style= width:100%;
+  background-size: cover;
+  background-position: center;
+
+ }
+
+.rounded-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff; /* White text color */
+    background-color: #8068d6; /* Purple background color */
+    border: none;
+    border-radius: 10px; /* Rounded edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.rounded-button:hover {
+    background-color: #a52a2a; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Container for the table */
+
+.table-container {
+    width: 100%; /* Expand to full width */
+    overflow: auto; /* Ensure table fits within the container */
+}
+
+
+
+/* Table styling */
+table {
+  width: 100%; /* Expand to full width of the container */
+  max-width: 100%; /* Ensure table does not exceed container */
+  border-collapse:collapse ;
+  background-color: #f7f4f0;
+  font-size: 17px;
+  width: 100%;
+  margin:5px;
+  text-align: left;
+  
+}
+
+/* Table header styling */
+td{
+color: #8068d6;
+padding: 5px;
+
+}
+
+
+th{
+  color: black;
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 17px
+}
+
+
+
+img {
+    width: 92px; /* Set a  size for the image */
+    height: 90px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+p {
+    margin: 5px;
+    font-style:italic;
+
+
+}
+
+
+
+/* style the button */
+
+.round-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #f62fc4; /* Pink font color */
+    background-color: #14f3f2; /* blue background color */
+    border: none;
+    border-radius: 50%; /* Makes the button round */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+}
+
+.round-button:hover {
+    background-color: #a52a2a; /* Changes to a different color on hover */
+}
+
+  
+}
+
+
+
+/* Create 5 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background-color: #fffff;
+
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #8068d6;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+    background-color: #fffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f62fc4;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar a{ float:none;
+  display:block; 
+  flex-direction: column;
+  width: 100%;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    table {
+        width: 100%; /* Ensure table adapts to smaller screens */
+    }
+}
+
+
+@media screen and (min-width: 601px) {
+  
+    font-size:auto;
+  }
+
+
+
+  .dropdown-content {
+        min-width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+  footer {
+        position: static;
+    }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8068d6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: fuchsia;
+    color:aqua;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="clearfix">
+  <!--Logo information -->
+<div class="img-container">
+  <img src="image/logo3.png" alt="Logo" style="width:74px; height: 68px; padding: 0px; ">
+</div>
+
+
+<!--Navigation Bar -->
+
+<div class="navbar" style="justify-content: left;"><strong>
+ 
+<a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>&nbsp; Home</a>&nbsp;
+<a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; About</a>&nbsp;
+<a href="services.html" class="w3-bar-item w3-button w3-pink"><i class="fa fa-clone"></i>&nbsp; Services</a>&nbsp;
+
+  <div class="dropdown">
+    <button class="dropbtn" style="font-size: 17px;"><i class="fa fa-list"></i>&nbsp;  Order&nbsp;
+      <i class="fa fa-caret-down"></i>
+    </button>
+    </strong>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+
+          <a href="specialcakes.html">Speciality Cakes</a>
+          <a href="cheesecake.html">Cheesecake</a>
+          <a href="cupcakes.html">Cupcakes</a>
+          <a href="tiramisu.html">Tiramisu</a>
+          <a href="bentocakes.html">Bento Cakes</a>
+          <a href="brunch.html">Brunch Box</a>
+          <a href="pastries.html">Pastries & Breads</a>
+         </div>
+       </div>  
+    </div>
+  </div>
+  
+  <a href="contact.html" class="w3-bar-item w3-button"><strong><i class="fa fa-phone"></i>&nbsp;  Contact us</strong></a>
+  <div>
+</div>
+</div>
+
+
+<!--Email & whatsapp -->
+<div>
+<p style="background-color: #fffff; font-size: 12px">
+<div class="social-media" style="color: #8068d6; justify-content: right;">
+                        
+            <a href="https://www.facebook.com/sweetdazzletreatz" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sweet_dazzle_treatz" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/18683899249" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            &nbsp; 
+            &nbsp; &nbsp;
+            <div style="background-color: white; border-radius: 10px;color: brown;  text-align: center;font-size: 17px; font-family: georgia;"
+    > Click the button to see map for pick up location. &nbsp; &nbsp;<br>
+     <button onclick="window.open('map.html', '_blank')">Map</button>
+    &nbsp; &nbsp;
+    </div>
+            </div>  
+ </p>
+</div>
+<div>
+
+<!-- Start Content -->
+
+<div>
+<div class="w3-container w3-animate-left  w3-center">
+  <br>
+ <h3 style="color:#f62fc4;"><strong>Food Catering Services:</strong></h3>
+</div>
+</div>
+
+
+<div id="services" class="w3-content ">
+
+
+<div class="clearfix">
+<div class="row">
+  <div class="column">
+
+   <p style="background-color: floralwhite;  font-size: 17px;  color: #a52a2a; font-family: cursive; border-radius: 10px;
+  text-align: left; display:inline-flex; justify-content: left;">
+      <i> At Sweet Dazzle Treatz, we offer catering services of baked, packaged and specialty  goods. An extensive range of delectable pastries, desserts, breads and cakes that blend traditional techniques with modern flavors. 
+      Every item is meticulously prepared using only the finest ingredients, ensuring that each bite is a moment of pure bliss! </i></p>
+  
+<div>  
+<section>
+<table style="border-radius: 10px;" >
+  
+  <div class="row">
+  <div class="column" >
+  <tbody>
+    <tr>
+    <th>Service</th>
+    <th>Description</th>
+    </tr>
+
+    <tr>
+    <td></td>
+    <td></td>
+    </tr>
+  
+
+  <tr>
+    <td><img src="image/slide3.png" alt="speciality cake"> <p style="color:black;">Speciality Cakes</p></td>
+   <td><p> Our Specialty Cakes are custom-designed and crafted to perfection for your special occasions. From multi-tiered wedding cakes adorned with fondant and edible flowers to themed birthday cakes shaped and decorated to match your interests, our gourmet cakes feature layers of exotic flavors like ganache, mousse, or fresh fruit. Made to order, these cakes add a memorable touch to any celebration, making milestones, holidays, and special events truly unforgettable.
+</p> </td>
+  </tr>
+
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+
+  <tr>
+    <td><img src="image/slide6.png" alt="cheesecake"><p style="color:black;">Cheesecake</p></td>
+    <td><p>Our Cheesecake is a rich and creamy delight, celebrated for its smooth, velvety texture. Available in a variety of flavors, each slice is a piece of heaven, garnished with fresh fruits, whipped cream, or a drizzle of luscious sauces. Whether it's a special occasion, a celebration, or just satisfying your sweet tooth, our cheesecake is the perfect indulgence.
+</p></td>
+</tr>
+
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+
+  <tr>
+    <td><img src="image/ccakes.png" alt="cupcakes"><p style="color:black;">Cupcakes</p></td>
+    <td>
+     <p>Our Cupcakes are delightful, individual-sized cakes that are perfect for any occasion. Available in a variety of flavors such as vanilla, chocolate, and red velvet. Each cupcake is topped with a generous swirl of frosting, from simple buttercream to elaborate piped decorations, and adorned with sprinkles, edible glitter, fruit, or other toppings. Our cupcakes are ideal for wedding displays, celebrations, parties, or everyday treats.
+</p></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><img src="image/slide7.png" alt="tiramisu"><p style="color:black;">Tiramisu </p></td>
+    <td><p>Experience the classic charm of our Tiramisu, a beloved Italian dessert known for its rich layers and bold flavors. Delicate ladyfinger cookies are soaked in a blend of coffee and liqueur, then layered with creamy mascarpone cheese and finished with a dusting of cocoa powder. Tiramisu, meaning "pick me up" in Italian, offers a perfect balance of sweetness and robust coffee flavor, making it a cherished treat for any occasion.
+</p></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><img src="image/slide5.png" alt="bento cakes"><p style="color:black;">Bento Cakes</p></td>
+    <td><p>Bento Cakes are small, charming cakes designed for both aesthetic appeal and convenience. Offered in classic flavors like chocolate, vanilla, and red velvet, these cakes are decorated with fresh fruits, edible flowers, or intricate piping. You can also include cupcakes or cup desserts. Their compact size and visually appealing presentation make them perfect for individual servings at events, as gifts, or for personal enjoyment.
+</p></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><img src="image/slide4.jpg" alt="brunch box"><p style="color:black;">Brunch Box</td>
+    <td><p>Our Brunch Box is a delightful assortment of breakfast and lunch favorites, carefully arranged to keep each item fresh and tasty. Inside, you'll find a scrumptious selection of sandwiches, flaky pastries, fluffy waffles, golden pancakes, perfectly cooked eggs, savory sausages, delicious cupcakes, crispy wings, tender nuggets, juicy fruits, and refreshing beverages. Perfect for picnics, office meals, or simply enjoying a cozy brunch at home, our brunch box brings a touch of homemade goodness to every bite.
+    </p></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><img src="image/slide4.png" alt="pastries"><p style="color:black;">Pastries & Bread</p></td>
+    <td><p>Indulge in our Pastries and Breads, offering a delightful array of sweet and savory baked goods made from enriched dough. Enjoy the flaky, light texture of croissants, danishes, éclairs, and tarts, often filled or topped with fruits, cream, chocolate, or nuts. Our breads range from soft and airy loaves like white or whole wheat bread to dense and hearty varieties like multigrain. Artisan breads boast a crispy crust and chewy interior, perfect for enjoying plain, toasted, or as a base for sandwiches, bruschetta, and more.
+    </p> </td>
+  </tr>
+
+</p>
+</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+ </div>
+
+
+    <!-- Footer -->
+<footer >
+<div class="w3-container  w3-center" style="background-color: white; border-radius: 10px;">
+  <br><br>
+  <h4 style="text-align: center; color:fuchsia;"><strong>&copy;2024 Sweet Dazzle Treatz</strong></h4>
+  <h6 style="text-align: center; color:brown;">All rights reserved</h6>
+  
+        <div class="social-media" style="color: brown; justify-content: center;">
+                        
+            <a href="https://www.facebook.com/sweetdazzletreatz" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sweet_dazzle_treatz" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/18683899249" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

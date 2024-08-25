@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Dazzle Treatz Launch</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Michelle Showers">
+<meta name="description" content="Sweet Dazzle Treatz Food Catering Services">
+<meta name="keywords" content="weddings, birthdays, cakes, desserts, celebrations, pastries, bakery">
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<style>
+body {font-family:"Tahoma", Helvetica, sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family:"Georgia",Tahoma, Arial,serif,sans-serif; letter-spacing:5px}
+       
+ /* style the header */
+.header{
+  position: relative;
+  height: 180px;
+  background-color:white; 
+  padding:5px;
+  text-align:center; 
+  background-image: url('image/bg4.jpg');
+  display: center; 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color:#14f3f2;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(10px);
+    transform: scale(0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color:black ;
+    padding: 30px;
+}
+
+
+.header h1 {
+    margin: 10;
+    font-size: 40px;
+}
+
+.header h4{
+    margin: 0;
+    font-size: 20px;
+}
+
+        
+
+    body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', sans-serif;
+    background-color: #fffff;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.btn-enter {
+    background-color: #f62fc4; /* Fuschia */
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    position: sticky;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-enter:hover {
+    background-color: #a52a2a; /* Brown */
+}
+
+
+
+
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.confetti {
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    position: absolute;
+    top: -10px;
+    animation: fall 4s linear infinite;
+    opacity: 0.7;
+}
+
+.confetti:nth-child(odd) {
+    background-color: #14f3f2;
+}
+
+.confetti:nth-child(even) {
+    background-color: #f62fc4;
+}
+
+.confetti:nth-child(1) { left: 10%; animation-delay: 0s; }
+.confetti:nth-child(2) { left: 20%; animation-delay: 0.5s; }
+.confetti:nth-child(3) { left: 30%; animation-delay: 1s; }
+.confetti:nth-child(4) { left: 40%; animation-delay: 1.5s; }
+.confetti:nth-child(5) { left: 50%; animation-delay: 2s; }
+.confetti:nth-child(6) { left: 60%; animation-delay: 2.5s; }
+.confetti:nth-child(7) { left: 70%; animation-delay: 3s; }
+.confetti:nth-child(8) { left: 85%; animation-delay: 3.5s; }
+.confetti:nth-child(9) { left: 95%; animation-delay: 4s; }
+.confetti:nth-child(10) { left: 100%; animation-delay: 4.5s; }
+.confetti:nth-child(11) { left: 15%; animation-delay: 0s; }
+.confetti:nth-child(12) { left: 25%; animation-delay: 1.5s; }
+.confetti:nth-child(13) { left: 35%; animation-delay: 4s; }
+.confetti:nth-child(14) { left: 45%; animation-delay: 2.5s; }
+.confetti:nth-child(15) { left: 55%; animation-delay: 2s; }
+.confetti:nth-child(16) { left: 65%; animation-delay: 2.5s; }
+.confetti:nth-child(17) { left: 75%; animation-delay: 3/5s; }
+.confetti:nth-child(18) { left: 90%; animation-delay: 3/5s; }
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(50vh) rotate(180deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    table {
+        width: 100%; /* Ensure table adapts to smaller screens */
+    }
+}
+
+
+@media screen and (min-width: 601px) {
+  
+   p{font-size:10px;}
+  }
+
+
+
+
+
+footer {
+    background-color: #fffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+  footer {
+        position: static;
+    }
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f62fc4;
+}
+
+body {
+  margin: 0 px;
+ 
+  background-size: cover;
+  background-position: center;
+
+ }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left-right {
+    width: 20%;  /* Adjust as needed */
+     margin: 5px;  /* Optional: Adds spacing between the images */
+}
+
+.middle {
+    width: 60%;  /* Adjust as needed */
+    margin: 0;  /* Optional: Adds spacing between the images */
+}
+
+}
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .left-right {
+        width: 25%;
+    }
+
+    .middle {
+        width: 50%;
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-right {
+        width: 30%;
+    }
+
+    .middle {
+        width: 40%;
+        margin: 0 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        flex-direction: column;
+    }
+
+    .left-right,
+    .middle {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+    </style>
+</head>
+
+
+
+    <header>
+  <!--Header information -->
+  <div class="header">
+  <div class="header-content">
+  <h1><b>Sweet Dazzle Treatz</b></h1>
+  <h4><b>Food Catering Services</b></h4>
+  
+</div>
+</div>
+</header>
+<div class="clearfix">
+<br>
+    <div class="w3-container w3-animate-top  w3-center w3-panel" style="border-radius: 10px; top: 30%; animation-delay: 2s;">
+        <h3 style="color:#f62fc4;"><strong>Welcome to the launch of our online store!</strong></h3>
+        <h4 style="color: #f62fc4;">We are delighted to have you here.</h4><br> 
+       
+    </div><br>
+
+    <div style="background-color: white; border-radius: 10px;color: brown;  text-align: center;font-size: 17px;"
+    > Click the button below to enter our delicious world of baked goods.<br><br>
+       <a href="index.html" class="btn-enter" style="position: center;">Enter</a><br><br>
+    </div>
+
+      
+    <div class="confetti-container">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+    </div>
+
+
+
+<div class="image-container" >
+    
+
+<img style="display: block;-webkit-user-select: none;margin-right: 10px;background-color: #fffff;" 
+src="https://img1.picmix.com/output/stamp/normal/8/8/6/9/1929688_64fea.gif">
+<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: #fffff; " 
+   src="https://gamechangerzvr.ca/wp-content/uploads/2020/02/confetti.gif" width="691" height="382">
+<img style="display: block;-webkit-user-select: none;margin-left:10px;background-color: #fffff;" 
+src="https://img1.picmix.com/output/stamp/normal/8/8/6/9/1929688_64fea.gif">
+</div>
+</div>
+
+
+
+<!-- Footer -->
+<footer >
+   
+<div class="w3-container  w3-center" style="background-color: #fffff; border-radius: 10px; margin: 0 150px 0 150px;">
+  <br><br>
+  <h4 style="text-align: center; color:fuchsia;"><strong>&copy;2024 Sweet Dazzle Treatz</strong></h4>
+  <h6 style="text-align: center; color:brown;">All rights reserved</h6>
+  
+        <div class="social-media" style="color: brown; justify-content: center;">
+                        
+            <a href="https://www.facebook.com/sweetdazzletreatz" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sweet_dazzle_treatz" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/18683899249" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            
+        </div>
+      </div>
+    </footer>
+
+
+    
+</body>
+</html>
