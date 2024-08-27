@@ -152,33 +152,6 @@ body {
  }
 
 
-.row {
-  display: flex;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  float: left;
-  width: 50%;
-  flex: 50%;
-  padding: 5px;
-
-}
-
-.column a {
-  float: none;
-  color: black;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.column a:hover {
-  background-color: #8068d6;
-}
-
-
 }
 
 footer {
@@ -255,6 +228,44 @@ button:hover {
     color:aqua;
 }
 
+
+        .container {
+            display: flex;
+            flex-direction: row; /* Display divs side by side on larger screens */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-div, .text-div {
+            width: 48%; /* Both divs take up 48% of the container width, with some margin */
+            box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+        }
+
+        .image-div img {
+            width: 100%; /* Image takes up full width of its div */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .text-div p {
+            font-size: 1rem; /* Base font size */
+            line-height: 1.5; /* Adjust line height for readability */
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack divs on top of each other on smaller screens */
+                align-items: stretch;
+            }
+
+            .image-div, .text-div {
+                width: 100%; /* Both divs take up 100% width of the container */
+                margin-bottom: 20px; /* Add some space between them */
+            }
+
+            .text-div p {
+                font-size: calc(0.9rem + 1vw); /* Responsive font size for smaller screens */
+            }
+        }
 </style>
 
 </head>
@@ -337,17 +348,13 @@ button:hover {
 </div>
 </div>
 
-<section>
-<div class="row">
-  <div class="column" style="margin:8px;">
-
-    <img src="image/chef1.jpg" alt="cat theme birthday cake" style="width:100%;background-color: lightblue; height:512 px;  border-radius: 10px;">
-  </div>
-  
-  <div class="column" style="margin:8px;  ">
-   
-    <p style="background-color: white;  border-radius: 10px; font-size: 24px;  color: #a52a2a; font-family: cursive; text-align: left; padding: 15px 9px 5px 12px; justify-content: left; height:512 px;">
-      <i> 
+<div class="container">
+        <div class="image-div">
+           <img src="image/chef1.jpg" alt="cat theme cake" style="width:100%;background-color: lightblue; height:512 px;  border-radius: 10px;">
+        </div>
+        <div class="text-div">
+            <p style="background-color: white;  border-radius: 10px; font-size: 24px;  color: #a52a2a; font-family: cursive; text-align: left; padding: 15px 10px 5px 12px; justify-content: left; height:512 px;">
+            <i>
 Launched in 2014, Sweet Dazzle Treatz Food Catering Services is an Online Baked Goods and Pastry Shop. It has been delivering handcrafted, gourmet cakes, desserts and pastries to homes across the country. 
 <br><br>
 Founded by Emma Showers, a passionate baker with a dream of making high-quality pastries, baked products and specialty gourmet cakes accessible to everyone, Sweet Dazzle Treatz combines the warmth of homemade baking with the convenience of online shopping. 
@@ -355,12 +362,9 @@ Founded by Emma Showers, a passionate baker with a dream of making high-quality 
 Emma’s journey into the world of baking began in her grandmother's kitchen, where she learned the art of creating mouth-watering treats from scratch. Later, she honed her skills at a prestigious culinary school.
 <br><br>
 Emma realized the potential of bring her creations to a wider audience through online platforms. Thus, Sweet Dazzle Treatz was born. 
-<br><br>
  </i></p>
-
- </div>
-
-</div>
+        </div>
+    </div>
 
 <div class="w3-container">
   <!-- Quote from the chef */-->  
