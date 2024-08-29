@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6 {font-family:"Georgia",Tahoma, Arial,serif,sans-serif; letter-
  /* style the header */
 .header{
   position: relative;
-  height: 180px;
+  height: 200px;
   background-color:white; 
   padding:5px;
   text-align:center; 
@@ -264,6 +264,50 @@ body {
 }
 
 
+/* Responsive headings */
+h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.75rem, 5vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+}
+
+h5 {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+h6 {
+    font-size: clamp(0.875rem, 2.5vw, 1.75rem);
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: clamp(1.75rem, 8vw, 3.5rem); }
+    h2 { font-size: clamp(1.5rem, 7vw, 3rem); }
+    h3 { font-size: clamp(1.25rem, 6vw, 2.5rem); }
+    h4 { font-size: clamp(1rem, 5.5vw, 2rem); }
+    h5 { font-size: clamp(0.875rem, 5vw, 1.75rem); }
+    h6 { font-size: clamp(0.75rem, 4.5vw, 1.5rem); }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: clamp(1.5rem, 9vw, 3rem); }
+    h2 { font-size: clamp(1.25rem, 8vw, 2.5rem); }
+    h3 { font-size: clamp(1rem, 7vw, 2rem); }
+    h4 { font-size: clamp(0.875rem, 6.5vw, 1.75rem); }
+    h5 { font-size: clamp(0.75rem, 6vw, 1.5rem); }
+    h6 { font-size: clamp(0.625rem, 5.5vw, 1.25rem); }
+}
+
+
     </style>
 </head>
 
@@ -282,8 +326,8 @@ body {
 <div class="clearfix">
 <br>
     <div class="w3-container w3-animate-top  w3-center w3-panel" style="border-radius: 10px; top: 30%; animation-delay: 2s;">
-        <h3 style="color:#f62fc4;"><strong>Welcome to the launch of our online store!</strong></h3>
-        <h4 style="color: #f62fc4;">We are delighted to have you here.</h4><br> 
+        <h5 style="color:#f62fc4;"><strong>Welcome to the launch of our online store!</strong></h5>
+        <h6 style="color: #f62fc4;">We are delighted to have you here.</h6><br> 
        
     </div><br>
 
@@ -335,8 +379,8 @@ src="https://img1.picmix.com/output/stamp/normal/8/8/6/9/1929688_64fea.gif">
    
 <div class="w3-container  w3-center" style="background-color: #fffff; border-radius: 10px; margin: 0 150px 0 150px;">
   <br><br>
-  <h4 style="text-align: center; color:fuchsia;"><strong>&copy;2024 Sweet Dazzle Treatz</strong></h4>
-  <h6 style="text-align: center; color:brown;">All rights reserved</h6>
+  <h6 style="text-align: center; color:fuchsia;"><strong>&copy;2024 Sweet Dazzle Treatz</strong></h6>
+  <p style="text-align: center; color:brown;font-size: 18px;">All rights reserved</p>
   
         <div class="social-media" style="color: brown; justify-content: center;">
                         

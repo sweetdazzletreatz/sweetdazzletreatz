@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6 {font-family:"Georgia",Tahoma, Arial,serif,sans-serif; letter-
 /* style the header */
 .header{
   position: relative;
-  height: 180px;
+  height: 200px;
   background-color:white; 
   padding:5px;
   text-align:center; 
@@ -136,12 +136,11 @@ h1,h2,h3,h4,h5,h6 {font-family:"Georgia",Tahoma, Arial,serif,sans-serif; letter-
   display: none;
   position: absolute;
   background-color:floralwhite;
-  width: 100%;
+  width: 70%;
   left: 5;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 
 
 .dropdown:hover .dropdown-content {
@@ -204,27 +203,13 @@ footer {
 }
 
 
+
 @media screen and (max-width: 600px) {
   .navbar a{ float:none;
   display:block; 
   flex-direction: column;
   width: 100%;
   }
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    table {
-        width: 100%; /* Ensure table adapts to smaller screens */
-    }
-}
-
-
-@media screen and (min-width: 601px) {
-  
-    font-size:auto;
-  }
-
-
 
   .dropdown-content {
         min-width: 100%;
@@ -237,6 +222,66 @@ footer {
     }
 
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 93%;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8068d6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: fuchsia;
+    color:aqua;
+}
+   .container {
+            display: flex;
+            flex-direction: row; /* Display divs side by side on larger screens */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-div, .text-div {
+            width: 48%; /* Both divs take up 48% of the container width, with some margin */
+            box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+        }
+
+        .image-div img {
+            width: 100%; /* Image takes up full width of its div */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .text-div p {
+            font-size: 1rem; /* Base font size */
+            line-height: 1.5; /* Adjust line height for readability */
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack divs on top of each other on smaller screens */
+                align-items: stretch;
+            }
+
+            .image-div, .text-div {
+                width: 100%; /* Both divs take up 100% width of the container */
+                margin-bottom: 20px; /* Add some space between them */
+            }
+
+            .text-div p {
+                font-size: calc(0.9rem + 1vw); /* Responsive font size for smaller screens */
+            }
+        }
 
 </style>
 
@@ -257,19 +302,19 @@ footer {
 
 <!--Logo information -->
 <div class="img-container">
-  <img src="image/logo3.png" alt="Logo" style="width:74px; height: 68px; ; margin: -3px 10px 0 60px ">
+  <img src="image/logo3.png" alt="Logo" style="width:74px; height: 68px; margin-left: 100px; ">
 </div>
 
 <!--Navigation Bar -->
 
-<div class="navbar" style="justify-content: left; margin: 10px 20px 25px 60px;padding-left: 40px"><strong>
+<div class="navbar" style="justify-content: left; margin-left: 220px;"><strong>
  
-<a href="index.html" class="w3-bar-item w3-button w3-pink "><i class="fa fa-home"></i>&nbsp; Home</a>&nbsp;
+<a href="index.html" class="w3-bar-item w3-button w3-pink"><i class="fa fa-home"></i>&nbsp; Home</a>&nbsp;
 <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>&nbsp; About</a>&nbsp;
 <a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-clone"></i>&nbsp; Services</a>&nbsp;
 
   <div class="dropdown">
-    <button class="dropbtn " style="font-size: 17px;"><i class="fa fa-list"></i>&nbsp;  Order&nbsp;
+    <button class="dropbtn " style="font-size: 17px; "><i class="fa fa-list"></i>&nbsp;  Order&nbsp;
       <i class="fa fa-caret-down"></i>
           </button>
     </strong>
@@ -291,20 +336,9 @@ footer {
   
   <a href="contact.html" class="w3-bar-item w3-button"><strong><i class="fa fa-phone"></i>&nbsp;  Contact us</strong></a>
   <div>
+    <br><br>
 </div>
 </div>
-
-
-
-
-<div>
-<div class="w3-container w3-animate-left  w3-center">
-  <br>
- <h4 style="color:#f62fc4;"><strong>Welcome to Sweet Dazzle Treatz</strong><br>- Put some dazzle in your life!</h4>
-</div>
-</div>
-
-
 
 <!--Email & whatsapp -->
 <div>
@@ -316,12 +350,17 @@ footer {
             <a href="https://wa.me/18683899249" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
             &nbsp; 
             &nbsp; &nbsp;
-            
+
+            <div style="background-color: white; border-radius: 10px;color: brown;  text-align: center;font-size: 17px; font-family: georgia;"
+    > Click the button to see map for pick up location. &nbsp; &nbsp;<br>
+     <button onclick="window.open('map.html', '_blank')">Map</button>
+    &nbsp; &nbsp;
     </div>
             </div>  
  </p>
 </div>
-<div>
+
+
 
 <!-- Start Content -->
 <div id="home" class="w3-content">
@@ -333,14 +372,14 @@ footer {
 
 <!-- Slides -->
 <img class="slides" src="image/slide7.png" width="100%" height="800px" alt="tiramisu">
-<img class="slides" src="image/slide3.jpeg" width="100%" height="800px" alt="birthday cake">
-<img class="slides" src="image/slide5.jpg" width="100%" height="800px" alt="wedding cake, cake pop, trifle, cupcakes">
-<img class="slides" src="image/slide6.jpg" width="100%" height="800px" alt="wedding display, cupcakes, desserts">
+<img class="slides center " src="image/slide3.jpeg" height="800px" alt="birthday cake">
+<img class="slides center" src="image/slide5.jpg"  height="800px" alt="wedding cake, cake pop, trifle, cupcakes">
+<img class="slides center" src="image/slide6.jpg"  height="800px" alt="wedding display, cupcakes, desserts">
 <img class="slides" src="image/slide6.png" width="100%" height="800px"alt="cheesecake">
 <img class="slides" src="image/slide5.png" width="100%" height="800px" alt="wedding cake">
-<img class="slides" src="image/slide1.jpeg" width="100%" height="800px" alt="birthday cake" >
+<img class="slides center" src="image/slide1.jpeg"  height="800px" alt="birthday cake" >
 <img class="slides" src="image/slide3.png" width="100%" height="800px" alt="celebratory cakes: weddings,anniversary">
-<img class="slides" src="image/slide2.jpeg" width="100%" height="800px" alt="birthday cake">
+<img class="slides center" src="image/slide2.jpeg"  height="800px" alt="birthday cake">
 <img class="slides" src="image/slide4.png" width="100%" height="800px" alt="pastries-tarts, bread, sweet bread, tuna puffs ">
 <img class="slides" src="image/slide4.jpg" width="100%" height="800px" alt="brunch box, pastries, corissant">
 <img class="slides" src="image/slide1.png" width="100%" height="800px" alt="cupcakes,wedding cakes">
